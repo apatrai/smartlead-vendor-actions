@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Smartlead почтовый парк — кому и что писать</title>
+<title>Smartlead mailbox fleet — who to contact & what to say</title>
 <style>
   :root{
     --bg:#0f1117; --card:#171a23; --card2:#1f2430; --line:#2a3040;
@@ -45,30 +45,30 @@
 <body>
 <div class="wrap">
 
-  <p class="mut small">Внутренний рабочий документ TimelinesAI · срез 14 августа 2026 · без ключей и паролей</p>
-  <h1>Почтовый парк Smartlead: кому и что писать</h1>
-  <p class="mut">484 ящика, 149 сломано. Причина везде — не пароли (они целые), а инфраструктура под ящиками: где заблокировали, где не прошла оплата, где заморозили/истёк домен. Ниже — по каждому поставщику: кто, куда, дословный текст.</p>
+  <p class="mut small">TimelinesAI internal working doc · snapshot 14 Aug 2026 · no keys or passwords included</p>
+  <h1>Smartlead mailbox fleet: who to contact & what to say</h1>
+  <p class="mut">484 mailboxes, 149 broken. The cause everywhere is NOT passwords (those are intact) — it is the infrastructure under the mailboxes: some domains locked, some unpaid, some frozen/expired. Below, per vendor: who, where, and the exact message to send.</p>
 
   <div class="stats">
-    <div class="stat"><div class="n">484</div><div class="l">ящиков всего</div></div>
-    <div class="stat"><div class="n" style="color:var(--ok)">335</div><div class="l">живых</div></div>
-    <div class="stat"><div class="n" style="color:var(--bad)">149</div><div class="l">сломано</div></div>
-    <div class="stat"><div class="n" style="color:var(--warn)">60</div><div class="l">реально вернуть</div></div>
-    <div class="stat"><div class="n" style="color:var(--bad)">20.08</div><div class="l">дедлайн по 77 ящикам</div></div>
+    <div class="stat"><div class="n">484</div><div class="l">mailboxes total</div></div>
+    <div class="stat"><div class="n" style="color:var(--ok)">335</div><div class="l">healthy</div></div>
+    <div class="stat"><div class="n" style="color:var(--bad)">149</div><div class="l">broken</div></div>
+    <div class="stat"><div class="n" style="color:var(--warn)">60</div><div class="l">realistically recoverable</div></div>
+    <div class="stat"><div class="n" style="color:var(--bad)">Aug 20</div><div class="l">deadline for 77 boxes</div></div>
   </div>
 
-  <div class="note danger"><b>Приоритет по срокам:</b> 1) до 20 августа — опознать «сироту» и продлить/заменить 77 ящиков; 2) сегодня — InboxKit (карта + восстановление, иначе 7 сентября падение ещё ~70); 3) сегодня — Aerosend (разблокировка 33). Пункты 2 и 3 не требуют никаких логинов в почту.</p></div>
+  <div class="note danger"><b>Priority by deadline:</b> 1) before Aug 20 — identify the "orphan" vendor and renew/replace 77 boxes; 2) today — InboxKit (fix card + restore, otherwise ~70 more die Sept 7); 3) today — Aerosend (unlock 33). Items 2 and 3 need no mailbox login.</div>
 
   <!-- ================= AEROSEND ================= -->
-  <h2>1 · Aerosend <span class="tag t-warn">33 ящика · вернуть</span></h2>
+  <h2>1 · Aerosend <span class="tag t-warn">33 boxes · recover</span></h2>
   <div class="card">
     <div class="kv">
-      <div class="k">Кому</div><div>Поддержка Aerosend</div>
-      <div class="k">Куда</div><div>Чат в кабинете <a href="https://app.aerosend.io">app.aerosend.io</a> (вход <code>hello@initech.co.il</code>) или их WhatsApp-линия поддержки</div>
-      <div class="k">Проблема</div><div>11 из 50 доменов в статусе <b>locked</b> — их 33 ящика не могут отправлять (ошибка 535). Приём (IMAP) работает, пароли не менялись → блок на их стороне.</div>
-      <div class="k">Цель</div><div>Разблокировать 11 доменов + узнать причину, чтобы не повторилось.</div>
+      <div class="k">Who</div><div>Aerosend support</div>
+      <div class="k">Where</div><div>In-app chat at <a href="https://app.aerosend.io">app.aerosend.io</a> (login <code>hello@initech.co.il</code>) or their WhatsApp support line</div>
+      <div class="k">Problem</div><div>11 of 50 domains are <b>locked</b> — their 33 mailboxes cannot send (error 535). IMAP (receiving) works, passwords unchanged → block is on their side.</div>
+      <div class="k">Goal</div><div>Unlock the 11 domains + learn the cause so it does not repeat.</div>
     </div>
-    <h3>Текст (скопировать в чат)</h3>
+    <h3>Message (paste into chat)</h3>
 <pre>11 of our 50 domains show status "locked" and their 33 mailboxes cannot send — account TimelinesAI Initech Ltd (client id 181, hello@initech.co.il), account status active and paid.
 
 Locked domains (all attached 2025-10-15): basetimelines.com, coretimelines.com, helptimelines.com, linktimelines.com, mailtimelines.com, stacktimelines.com, suitetimelines.com, synctimelines.com, try-timelines.com, viewtimelines.com, worktimelines.com.
@@ -80,21 +80,21 @@ Please tell us:
 2. Was it a spam/complaint or deliverability trigger? If yes, share the details.
 3. What is needed to unlock them and resume sending.
 4. What we should change to prevent a repeat.</pre>
-    <p class="small mut">Ждём в ответ: причину блокировки (вероятно жалобы на спам) и шаги по снятию. Если причина — жалобы, дальше вопрос не «разблокировать», а что в рассылках их вызывает.</p>
+    <p class="small mut">Expect back: the lock reason (likely spam complaints) and unlock steps. If it is complaints, the next question is what in the campaigns triggers them.</p>
   </div>
 
   <!-- ================= INBOXKIT ================= -->
-  <h2>2 · InboxKit <span class="tag t-warn">27 ящиков + защитить ~70</span></h2>
+  <h2>2 · InboxKit <span class="tag t-warn">27 boxes + protect ~70</span></h2>
   <div class="card">
     <div class="kv">
-      <div class="k">Кому</div><div>Поддержка InboxKit</div>
-      <div class="k">Куда</div><div>Их поддержка (email/чат), аккаунт «Initech Ltd», админ <code>tools@timelines.ai</code></div>
-      <div class="k">Проблема</div><div>У 9 доменов дважды не прошла помесячная оплата (7 мая, 7 июля) → Google выключил их Workspace → 27 ящиков мертвы. В кошельке ~35 кредитов при расходе ~300/мес.</div>
-      <div class="k">Риск</div><div><b>7 сентября продлеваются ещё ~70 ящиков</b> — при той же карте отвалятся.</div>
-      <div class="k">Ссылка на биллинг</div><div class="small mut">хранится в приватных заметках (не публикуется). Открывается без входа в почту, там меняется карта.</div>
+      <div class="k">Who</div><div>InboxKit support</div>
+      <div class="k">Where</div><div>Their support (email/chat), account "Initech Ltd", admin <code>tools@timelines.ai</code></div>
+      <div class="k">Problem</div><div>9 domains had monthly billing fail twice (May 7, Jul 7) → Google suspended their Workspace → 27 mailboxes dead. Wallet ~35 credits vs ~300/mo burn.</div>
+      <div class="k">Risk</div><div><b>~70 more mailboxes renew on Sept 7</b> — with the same card they will also fail.</div>
+      <div class="k">Billing link</div><div class="small mut">stored in private notes (not published). Opens with no mailbox login; the card is changed there.</div>
     </div>
-    <p class="small mut">9 отключённых доменов: timelines-business.com, timelines-mail.com, timelines-updates.com, timelines-us.com, timelinescenter.com, timelinesinc.com, timelinesinfo.com, timelinesnews.com, timelinesus.com</p>
-    <h3>Текст (в поддержку)</h3>
+    <p class="small mut">9 suspended domains: timelines-business.com, timelines-mail.com, timelines-updates.com, timelines-us.com, timelinescenter.com, timelinesinc.com, timelinesinfo.com, timelinesnews.com, timelinesus.com</p>
+    <h3>Message (to support)</h3>
 <pre>Subject: 9 domains suspended by failed renewals — need recovery status + billing fix before Sept 7
 
 Hi InboxKit team,
@@ -108,24 +108,24 @@ Three questions:
 
 Thanks,
 Anton — TimelinesAI (Initech Ltd)</pre>
-    <p class="small mut">Действие помимо письма: открыть биллинг-портал → поменять карту → пополнить кошелёк (≥210 кредитов к 7 сентября). Это деньги — согласовать с Антоном.</p>
+    <p class="small mut">Action besides the message: open the billing portal → change the card → top up the wallet (≥210 credits before Sept 7). This is money — confirm first.</p>
   </div>
 
   <!-- ================= ORPHAN / SMARTLEAD ================= -->
-  <h2>3 · «Сирота» — 166 ящиков, поставщик не опознан <span class="tag t-bad">срочно до 20.08</span></h2>
+  <h2>3 · "Orphan" — 166 boxes, vendor unidentified <span class="tag t-bad">urgent before Aug 20</span></h2>
   <div class="card">
-    <p>166 ящиков (партии мая/июля/августа 2025) сидят на доменах, которых <b>нет ни в аккаунте Aerosend, ни в InboxKit</b>. Отпечаток: регистратор <b>Name SRS AB</b>, DNS <b>dnsmixer.com</b>. Это крупный «сделай-за-меня» сервис (его DNS обслуживают ~9 800 рассылочных доменов у разных клиентов) — доступа к его пульту у нас нет.</p>
+    <p>166 mailboxes (May/July/Aug 2025 batches) sit on domains that are <b>in neither the Aerosend nor the InboxKit account</b>. Fingerprint: registrar <b>Name SRS AB</b>, DNS <b>dnsmixer.com</b>. This is a large done-for-you provider (its DNS serves ~9,800 cold-email domains across many customers) — we have no access to its panel.</p>
 
-    <div class="note"><b>Что реально:</b> 85 ящиков (май 12 + июль 73) практически потеряны — домены отпущены или заморожены, а ящики Google выключил за неоплату; вернуть может только сам пропавший поставщик. 77 августовских пока живы, но их домены <b>истекают 20 августа</b>, и сохранить прогретые ящики может только владелец того аккаунта. Вывод: не «спасать», а <b>заменять</b> — замена уже идёт (70 новых ящиков куплены 7–10 августа).</div>
+    <div class="note"><b>Reality:</b> 85 boxes (May 12 + July 73) are practically lost — domains released or frozen, and Google turned the mailboxes off for non-payment; only the vanished vendor could bring them back. The 77 August boxes are still alive but their domains <b>expire Aug 20</b>, and only the account holder can preserve the warmed inboxes. Conclusion: don't rescue — <b>replace</b>. Replacement already started (70 new boxes bought Aug 7–10).</div>
 
-    <h3>Как опознать поставщика (без логинов) — по убыванию скорости</h3>
+    <h3>How to identify the vendor (no logins) — fastest first</h3>
     <ol>
-      <li><b>Кто покупал 70 новых ящиков 7–10 августа?</b> Они на той же цепочке регистратора (PublicDomainRegistry) — этот человек почти наверняка знает нужного поставщика. Самый короткий путь.</li>
-      <li><b>Платёжные записи TimelinesAI</b> за май/июль/август 2025 (Stripe/PayPal/карта/банк): кому уходили платежи за ящики. Отпечаток продавца: продаёт Google-ящики, DNS dnsmixer.com, регистратор Name SRS AB.</li>
-      <li><b>Поддержка Smartlead</b> — покупались ли эти партии через их программу готовых доменов (SmartSenders). Текст ниже.</li>
+      <li><b>Who bought the 70 new boxes on Aug 7–10?</b> They are on the same registrar chain (PublicDomainRegistry) — that person almost certainly knows the right vendor. Shortest path.</li>
+      <li><b>TimelinesAI payment records</b> for May/July/Aug 2025 (Stripe/PayPal/card/bank): who the mailbox payments went to. Vendor fingerprint: sells Google mailboxes, DNS dnsmixer.com, registrar Name SRS AB.</li>
+      <li><b>Smartlead support</b> — whether these batches were bought through their done-for-you domains program (SmartSenders). Message below.</li>
     </ol>
 
-    <h3>Текст в поддержку Smartlead</h3>
+    <h3>Message to Smartlead support</h3>
 <pre>Subject: 166 done-for-you mailboxes — need vendor identified + renewal path (28 domains expire 2026-08-20)
 
 166 mailboxes in our Smartlead account sit on domains we cannot trace to any vendor account we hold, and 28 of those domains expire on 2026-08-20. We need to know whether these were provisioned through SmartSenders / Smartlead's done-for-you domains program, and if so, how renewals and DNS issues on them are handled.
@@ -142,71 +142,71 @@ Questions:
 4. Going forward: who owns renewals/billing for this set, and how do we get direct access?
 
 Full domain/mailbox list available on request. Account: [Smartlead account email / workspace name].</pre>
-    <p class="small mut">Перед отправкой вписать email/workspace аккаунта Smartlead в последней строке и приложить список 54 доменов (внизу страницы).</p>
+    <p class="small mut">Before sending: put the Smartlead account email / workspace name in the last line, and attach the 54-domain list (bottom of page).</p>
   </div>
 
-  <!-- ================= КАК ПЕРЕСТАТЬ ПЛАТИТЬ ================= -->
-  <h2>Как перестать платить за домены и ящики</h2>
+  <!-- ================= HOW TO STOP PAYING ================= -->
+  <h2>How to stop paying for the domains &amp; mailboxes</h2>
   <div class="card">
-    <div class="note danger"><b>Главное:</b> удаление ящиков/доменов из Smartlead НЕ останавливает оплату. Smartlead — это только приложение для отправки. Деньги берут поставщики (Aerosend, InboxKit) и регистраторы доменов. Останавливать надо у них, а не в Smartlead.</div>
-    <p>Деньги уходят из трёх мест:</p>
+    <div class="note danger"><b>Key point:</b> deleting mailboxes/domains inside Smartlead does NOT stop any billing. Smartlead is only the sending app. The money is charged by the vendors (Aerosend, InboxKit) and the domain registrars. You must stop it at the vendor, not in Smartlead.</div>
+    <p>Money flows from three places:</p>
     <table>
-      <thead><tr><th>Куда платится</th><th>Что за оплата</th><th>Как остановить навсегда</th></tr></thead>
+      <thead><tr><th>Paid to</th><th>What the charge is</th><th>How to stop it for good</th></tr></thead>
       <tbody>
         <tr>
           <td><b>InboxKit</b></td>
-          <td>Тариф $39/мес (продление 23-го числа) + автопополнение кошелька (когда кредитов &lt;10 → автопокупка 300). Ящики — 3 кредита/мес каждый.</td>
-          <td>В кабинете: <b>отключить автопополнение</b> (убирает внезапные списания), <b>отменить подписку</b>, <b>отменить/удалить ящики</b>. Всё это можно сделать через подключение — по твоему слову сделаю прямо сейчас.</td>
+          <td>$39/mo plan (renews on the 23rd) + wallet auto-top-up (when credits &lt;10 → auto-buys 300). Mailboxes cost 3 credits/mo each.</td>
+          <td>In the account: <b>disable auto-top-up</b> (kills surprise charges), <b>cancel the subscription</b>, <b>cancel/delete the mailboxes</b>. All doable via the connected API — can be done now on your word.</td>
         </tr>
         <tr>
           <td><b>Aerosend</b></td>
-          <td>Помесячно за ящик + домены. Аккаунт активен и оплачивается.</td>
-          <td>Только в их кабинете/чате (app.aerosend.io) — «cancel anytime, без возврата». Их API отмену не даёт. Написать в чат: отменить подписку и все ящики.</td>
+          <td>Monthly per mailbox + domains. Account active and paid.</td>
+          <td>Only in their dashboard/chat (app.aerosend.io) — "cancel anytime, no refunds". Their API has no cancel. Message the chat: cancel the subscription and all mailboxes.</td>
         </tr>
         <tr>
-          <td><b>«Сирота»</b></td>
-          <td>Оплата этому поставщику уже сорвалась — поэтому ящики и умирают.</td>
-          <td>Отменять нечего: домены отпадают/истекают сами (май — уже нет, июль — заморожены, авг — истекают 20.08). Если по карте всё же идёт списание — заблокировать его в банке.</td>
+          <td><b>"Orphan"</b></td>
+          <td>Payment to this vendor already failed — which is why the boxes are dying.</td>
+          <td>Nothing to cancel: the domains lapse on their own (May already gone, July frozen, Aug expires Aug 20). If a card is still being charged, block it at the bank.</td>
         </tr>
       </tbody>
     </table>
-    <div class="note"><b>Надёжный предохранитель от любых непонятных списаний:</b> найти карту, с которой всё это оплачивается, и заменить/заблокировать её у поставщиков или в банке. Тогда никто не спишет, кем бы поставщик ни был.</div>
+    <div class="note"><b>Reliable backstop against any charge you can't trace:</b> find the card that pays for all this and replace/block it — at the vendors or at the bank. Then nothing can charge, whoever the vendor turns out to be.</div>
   </div>
 
   <!-- ================= RAW APPENDIX ================= -->
-  <h2>Сырые данные</h2>
+  <h2>Raw data</h2>
 
-  <h3>Сверка: партия → поставщик → состояние</h3>
+  <h3>Reconciliation: batch → vendor → state</h3>
   <table>
-    <thead><tr><th>Партия</th><th>Поставщик</th><th>Ящиков</th><th>Живых</th><th>Сломано</th><th>Что с доменами</th></tr></thead>
+    <thead><tr><th>Batch</th><th>Vendor</th><th>Boxes</th><th>Healthy</th><th>Broken</th><th>Domain state</th></tr></thead>
     <tbody>
-      <tr><td>май 2025</td><td>«Сирота» (Name SRS/dnsmixer)</td><td>12</td><td>0</td><td>12</td><td>отпущены (NXDOMAIN) — мертвы</td></tr>
-      <tr><td>июль 2025</td><td>«Сирота»</td><td>73</td><td>0</td><td>73</td><td>оплачены до 2027, но заморожены + Google выключил ящики</td></tr>
-      <tr><td>авг 2025</td><td>«Сирота»</td><td>81</td><td>77</td><td>4</td><td>истекают 20.08.2026 (регистрация на год)</td></tr>
-      <tr><td>сен 2025</td><td>Aerosend (GoDaddy)</td><td>30</td><td>30</td><td>0</td><td>active</td></tr>
-      <tr><td>окт 2025</td><td>InboxKit (Gransy)</td><td>98</td><td>71</td><td>27</td><td>9 доменов отключены за неоплату</td></tr>
-      <tr><td>ноя 2025</td><td>Aerosend (GoDaddy)</td><td>120</td><td>87</td><td>33</td><td>11 доменов locked</td></tr>
-      <tr><td>авг 2026</td><td>Новый (PDR/Google)</td><td>70</td><td>70</td><td>0</td><td>свежая замена, прогрев идёт</td></tr>
-      <tr><th>Итого</th><th></th><th>484</th><th>335</th><th>149</th><th></th></tr>
+      <tr><td>May 2025</td><td>Orphan (Name SRS / dnsmixer)</td><td>12</td><td>0</td><td>12</td><td>released (NXDOMAIN) — dead</td></tr>
+      <tr><td>Jul 2025</td><td>Orphan</td><td>73</td><td>0</td><td>73</td><td>paid to 2027 but frozen + Google disabled the mailboxes</td></tr>
+      <tr><td>Aug 2025</td><td>Orphan</td><td>81</td><td>77</td><td>4</td><td>expire 2026-08-20 (1-year registration)</td></tr>
+      <tr><td>Sep 2025</td><td>Aerosend (GoDaddy)</td><td>30</td><td>30</td><td>0</td><td>active</td></tr>
+      <tr><td>Oct 2025</td><td>InboxKit (Gransy)</td><td>98</td><td>71</td><td>27</td><td>9 domains suspended for non-payment</td></tr>
+      <tr><td>Nov 2025</td><td>Aerosend (GoDaddy)</td><td>120</td><td>87</td><td>33</td><td>11 domains locked</td></tr>
+      <tr><td>Aug 2026</td><td>New (PDR / Google)</td><td>70</td><td>70</td><td>0</td><td>fresh replacement, warming up</td></tr>
+      <tr><th>Total</th><th></th><th>484</th><th>335</th><th>149</th><th></th></tr>
     </tbody>
   </table>
 
-  <h3>Aerosend — 11 заблокированных доменов</h3>
+  <h3>Aerosend — 11 locked domains</h3>
   <div class="doms">basetimelines.com<br>coretimelines.com<br>helptimelines.com<br>linktimelines.com<br>mailtimelines.com<br>stacktimelines.com<br>suitetimelines.com<br>synctimelines.com<br>try-timelines.com<br>viewtimelines.com<br>worktimelines.com</div>
 
-  <h3>InboxKit — 9 отключённых доменов</h3>
+  <h3>InboxKit — 9 suspended domains</h3>
   <div class="doms">timelines-business.com<br>timelines-mail.com<br>timelines-updates.com<br>timelines-us.com<br>timelinescenter.com<br>timelinesinc.com<br>timelinesinfo.com<br>timelinesnews.com<br>timelinesus.com</div>
 
-  <h3>«Сирота» май — 3 домена (мертвы)</h3>
+  <h3>Orphan · May — 3 domains (dead)</h3>
   <div class="doms">jointimelines.com<br>starttimelines.com<br>timelinesaisaas.com</div>
 
-  <h3>«Сирота» июль — 23 домена (заморожены, до 2027)</h3>
+  <h3>Orphan · July — 23 domains (frozen, paid to 2027)</h3>
   <div class="doms">buildtimelinesai.com<br>checktimelines.com<br>crmtimelines.com<br>crmtimelinesai.com<br>crmtimelineshq.com<br>gettimelines.com<br>gosalestimelines.com<br>gotrytimelines.com<br>inboxtimelines.com<br>joinsaastimelines.com<br>messagetimelines.com<br>replytimelines.com<br>replytimelineshq.com<br>saastimelines.com<br>saastimelinesapp.com<br>salestimelines.com<br>timelinessupport.com<br>timelinesteam.com<br>timelinesview.com<br>trytimelines.com<br>trytimelinesai.com<br>viewtimelinesai.com<br>worktimelinesai.com</div>
 
-  <h3>«Сирота» август — 28 доменов (истекают 20.08.2026)</h3>
+  <h3>Orphan · August — 28 domains (expire 2026-08-20)</h3>
   <div class="doms">mytimelineschat.com<br>runtimelines.com<br>salestimelines.com<br>timelinesapps.com<br>timelinescare.com<br>timelineschat.com<br>timelinesconnect.com<br>timelinescore.com<br>timelinesdesk.com<br>timelinesdigital.com<br>timelinesglobal.com<br>timelineshelp.com<br>timelineshelpcenter.com<br>timelineshub.com<br>timelinesinbox.com<br>timelineslink.com<br>timelinesmail.com<br>timelinesmarketing.com<br>timelinesnotify.com<br>timelinesoffice.com<br>timelinesone.com<br>timelinespartners.com<br>timelinesplatform.com<br>timelinesplus.com<br>timelinesportal.com<br>timelinesreply.com<br>usetimelines.com<br>withtimelines.com</div>
 
-  <p class="mut small" style="margin-top:40px;border-top:1px solid var(--line);padding-top:16px">Источник: живые API Smartlead / Aerosend / InboxKit + публичные реестры доменов (RDAP/DNS), 14.08.2026. Ключи, пароли ящиков и ссылка на биллинг здесь намеренно не публикуются.</p>
+  <p class="mut small" style="margin-top:40px;border-top:1px solid var(--line);padding-top:16px">Source: live Smartlead / Aerosend / InboxKit APIs + public domain registries (RDAP/DNS), 14 Aug 2026. API keys, mailbox passwords, and the billing link are deliberately not published here.</p>
 
 </div>
 </body>
